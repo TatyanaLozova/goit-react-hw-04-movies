@@ -6,12 +6,12 @@ import routes from "./routes";
 
 import "./App.css";
 
-const HomePageView = lazy(() =>
-  import("./views/HomePageView.js" /* webpackChunkName: "home-view" */)
+const HomeView = lazy(() =>
+  import("./views/HomeView.js" /* webpackChunkName: "home-view" */)
 );
-const MovieDetailsPageView = lazy(() =>
+const MovieDetailsView = lazy(() =>
   import(
-    "./views/MovieDetailsPageView/MovieDetailsPageView" /* webpackChunkName: "movie-details-view" */
+    "./views/MovieDetailsView/MovieDetailsView" /* webpackChunkName: "movie-details-view" */
   )
 );
 const MoviesPageView = lazy(() =>
@@ -28,10 +28,10 @@ const App = () => {
           <h1 className="App">Top movies for today</h1>
         <Suspense fallback={<h1>Load..</h1>}>
           <Switch>
-            <Route exact path={routes.home} component={HomePageView} />
+            <Route exact path={routes.home} component={HomeView} />
             <Route
               path={routes.movieDetails}
-              component={MovieDetailsPageView}
+              component={MovieDetailsView}
             />
             <Route path={routes.movies} component={MoviesPageView} />
             <Route component={NotFoundView} />

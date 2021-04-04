@@ -1,7 +1,7 @@
 import React, { lazy, Suspense, Component } from "react";
 import { NavLink, Route } from "react-router-dom";
 import MovieDetailsCard from "../../components/MovieDetailsCard/MovieDetailsCard";
-import s from "./MovieDetailsPageView.module.css";
+import s from "./MovieDetailsView.module.css";
 import routes from "../../routes";
 import movi from "../../services/API";
 const { getDetails } = movi;
@@ -9,18 +9,18 @@ const { getDetails } = movi;
 
 const Cast = lazy(() =>
   import(
-    "../../components/Cast/Cast" /* webpackChunkName: "movie-details-page-cast" */
+    "../../components/Cast/Cast" /* webpackChunkName: "Cast" */
   )
 );
 
 const Reviews = lazy(() =>
   import(
-    "../../components/Reviews/Reviews" /* webpackChunkName: "movie-details-page-Reviews" */
+    "../../components/Reviews/Reviews" /* webpackChunkName: "Reviews" */
   )
 );
 // ***
 
-class MovieDetailsPageView extends Component {
+class MovieDetailsView extends Component {
   state = {
     movieDetail: {},
     movieGenres: [],
@@ -99,4 +99,4 @@ class MovieDetailsPageView extends Component {
   }
 }
 
-export default MovieDetailsPageView;
+export default MovieDetailsView;

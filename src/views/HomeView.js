@@ -5,7 +5,7 @@ import MoviesGallery from "../components/MoviesGallery/MoviesGallery";
 import x from "../services/API";
 const { getTrending } = x;
 
-class HomePageView extends Component {
+class HomeView extends Component {
   state = {
     movies: [],
   };
@@ -29,4 +29,4 @@ class HomePageView extends Component {
   }
 }
 
-export default HomePageView;
+export default HomeView;
