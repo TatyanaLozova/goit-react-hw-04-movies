@@ -50,6 +50,6 @@ npm install --save-dev prettier husky lint-staged
 npm i uuid
 npm install axios
 npm install --save react-spinners
-npm i netlify-cli -g - нетліфай
+npm i netlify-cli -g нетліфай
 npm i redux
 npm install react-router-dom
