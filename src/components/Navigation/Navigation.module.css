@@ -1,0 +1,45 @@
+.header {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(21, 5, 241, 0),
+    rgb(60, 41, 167)
+  );
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 1100;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 64px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-shadow: 0 20px 49px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
+}
+
+.link_home {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px rgb(236, 234, 96);
+  cursor: pointer;
+  min-width: 100px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 6px;
+}
+
+.link_movie {
+  composes: link_home;
+  margin-left: 20px;
+}
+
+.link_home:hover {
+  color: rgb(0, 225, 255);
+  box-shadow: 0 0 5px 2px rgb(0, 225, 255);
+}

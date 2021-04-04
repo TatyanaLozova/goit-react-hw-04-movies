@@ -1,0 +1,28 @@
+.gallery {
+  margin-top: 3vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  overflow: hidden;
+  display: grid;
+  max-width: calc(100vw - 80px);
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  grid-gap: 16px;
+  list-style: none;
+}
+.title {
+  color: white;
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.castItem {
+  padding: 5px;
+  border-radius: 2px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(68, 59, 190, 0),
+    rgb(60, 41, 167)
+  );
+}

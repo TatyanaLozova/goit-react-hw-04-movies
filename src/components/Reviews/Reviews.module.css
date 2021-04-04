@@ -1,0 +1,29 @@
+.title {
+  color: ffff;
+  margin-top: 0;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.list {
+  list-style: none;
+  display: block;
+  text-align: left;
+}
+
+.post {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 2px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(88, 87, 87, 0.5)),
+    to(rgba(61, 60, 60, 0.85))
+  );
+}
+.author {
+  color: fff;
+  font-weight: 600;
+}
